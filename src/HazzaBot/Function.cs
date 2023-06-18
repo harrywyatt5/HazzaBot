@@ -59,8 +59,10 @@ namespace HazzaBot
                     handler = new PingHandler();
                     break;
                 case InteractionType.ApplicationCommand:
-                    // TODO: Implement
-                    handler = new PingHandler();
+                    var commandExecuter = root.GetProperty("member").Deserialize<Member>();
+                    var commandData = root.GetProperty("data").Deserialize<CommandData>();
+                    
+                    handler = new CommandHandler(commandExecuter, commandData);
                     break;
                 case InteractionType.ModalSubmit:
                     //TODO: iMplment

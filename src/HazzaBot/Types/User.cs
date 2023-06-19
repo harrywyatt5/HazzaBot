@@ -1,8 +1,9 @@
 ﻿using System.Text.Json.Serialization;
+using HazzaBot.Interfaces;
 
 namespace HazzaBot.Types;
 
-public class User
+public class User : IUser
 {
     [JsonPropertyName("id")] 
     public string Id { get; set; }

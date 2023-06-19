@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
 using HazzaBot.Interfaces;
+using HazzaBot.Types;
 
-namespace HazzaBot.Types;
+namespace HazzaBot.Helper;
 
 public class CommandHandler : IHandler
 {

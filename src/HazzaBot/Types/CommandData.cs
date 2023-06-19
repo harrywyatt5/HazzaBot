@@ -1,5 +1,4 @@
 ﻿#nullable enable
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
 using HazzaBot.Enums;
 using HazzaBot.Interfaces;
